@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<link rel="stylesheet" href="css/hd-main.css">
+	<link rel="stylesheet" href="text_puzzle/css/puzzle_game.css">
+	<title>ROG X570 motherboard landing page</title>
+</head>
+<body>
+	
+	<div id="hd">
+		<div class="game_text active">
+			<h2 class="txt-silver tex-top" style="width:100%; padding-top: 0; margin-bottom: 50px; text-align: center;">ROG Crossword Challenge</h2>
+			<h3 class="txt-red txt-center">HOW TO PARTICIPATE</h3>
+			<p class="txt-center">Between Nov 15 to Dec 5, 2019, simply follow:</p>
+			<div class="game_f_box">
+				<div class="game_f_item">
+					<img src="img/word-icon.png" alt="">
+					<h5 class="txt-red txt-center">1. Crossword</h5>
+					<p>Complete the crossword below and obtain a hidden message.</p>
+				</div>
+				<div class="game_f_item">
+					<img src="img/icon.png" alt="">
+					<h5 class="txt-red txt-center">2. Enter</h5>
+					<p>Enter the hidden message within Gleam and complete additional missions to amplify your chance of winning.</p>
+				</div>
+			</div>
+		</div>
+		<section id="puzzle_game" class="active">
+			<div class="hd-w1000 see_default">
+				<p style="color: #828282"><img src="img/visibility-reminder.png" style="display: inline; vertical-align: bottom; margin-right: 10px;" alt=""> reminder</p>
+			</div>
+			<div class="pw1000">
+				<input id="answer" type="text" maxlength="1">
+				<div id="que">
+					<div class="title">
+						<p style="margin-bottom: 0;">Across</p>
+					</div>
+					<div class="o">
+						<ul id="puzzle_qlist_across">
+							<!-- <li>When it comes to small builds , most cases are compatible with the ____ power supply.</li> -->
+							<li class="qn1" data-qn="1">2. Users can control and design all 144 ______ LEDs on the front panel of the 309.</li>
+							<!-- <li></li> -->
+							<!-- <li></li> -->
+							<li class="qn4" data-qn="4">5. Immersive yourself in sound with ROG _______ audio technology , which is engineered to provide a flat frequency response and offer a neutral, detailed sound signature. </li>
+							<!-- <li></li> -->
+							<li class="qn6" data-qn="6">7. Take RGB lighting beyond the checkbox, combining and controlling the LEDs across all of your ROG products with this software.  </li>
+							<!-- <li></li> -->
+							<li class="qn8" data-qn="8">9. This technology allows memory kits to run at lower latencies, reduced voltages, and operate at higher frequencies. </li>
+							<li class="qn9" data-qn="9">10. Optimized for the latest AMD Ryzen 3000 series processors and X570 motherboards, G.SKILL Trident Z ___ series DDR4 memory brings extreme memory performance to any gaming PC or workstation.</li>
+						</ul>
+					</div>
+					
+					<div class="title">
+						<p style="margin-bottom: 0;">down</p>
+					</div>
+					<div class="o">
+						<ul id="puzzle_qlist_down">
+							<li class="qn0" data-qn="0">1. Featuring an array of 16 strategically _____, the Crosshair VIII Formula's VRM is geared for any workload and all operating conditions.</li>
+							<li class="qn1" data-qn="1">2. ROG Strix’s motherboard is imprinted with  Futuristic ______ patterns provide an additional stylish accent, rounding out a design that proudly proclaims the board's gaming identity.</li>
+							<!-- <li></li> -->
+							<li class="qn3" data-qn="3">4. Designed and engineered in cooperation with the EK team, the new _____ EK III hybrid cooling block offers air or liquid cooling.</li>
+							<li class="qn4" data-qn="4">5. </li>
+							<li class="qn5" data-qn="5">6. It is a new software utility designed to give you centralized control of supported ROG gaming products.</li>
+							<li class="qn6" data-qn="6">7. This form factor is marginally taller than mini-ITX allowing  the Crosshair VIII Impact to squeeze in features while still fitting a large proportion of mini-ITX PC cases.</li>
+							<!-- <li></li> -->
+							<!-- <li></li> -->
+							<li class="qn9" data-qn="9">10. Functions as a system reset button, but it can also be easily set to quickly turn Aura lighting on or off, activate Safe Boot or enter the BIOS.​</li>
+							<li class="qn10" data-qn="10">11. The A1 Plus is a Mini-ITX chassis and is equipped with a _______ charger on the top to charge all Qi enabled devices.</li>
+							<!-- <li></li> -->
+							<li class="qn12" data-qn="12">13. Crosshair VIII  _____ Mini-DTX frame packs loads of ATX-grade features, including advanced power delivery and cooling.</li>
+							<!-- <li></li> -->
+							<!-- <li></li> -->
+						</ul>
+					</div>
+					
+				</div>
+				<div id="game_outer">
+				</div> 
+			</div>
+			<div class="pw1000">
+				<h4 class="msg_title"><span>Hidden Message</span></h4>
+				<ul id="hidden_msg" class="msg_box"></ul>
+			</div>
+			<!-- <div class="all" onclick="fillCorrect()">一鍵答對</div> -->
+		</section>
+	</div>
+
+	<script src="lib/jquery-3.1.0.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="text_puzzle/js/puzzle_game.js"></script>
+</body>
+</html>
